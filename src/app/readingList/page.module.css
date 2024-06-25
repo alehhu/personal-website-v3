@@ -1,0 +1,43 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background: #FFF;
+}
+
+.mainPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 86%;
+    min-width: 100%;
+    background: linear-gradient(-45deg, #6452ee, #b73ce7, #1e91bb, #32b395);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    backdrop-filter: blur(8px);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.reviewsContainer{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+    min-height: 500px;
+    white-space: nowrap;
+    padding: 10px;
+    gap:10px;
+}
