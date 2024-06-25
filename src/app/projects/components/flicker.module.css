@@ -1,0 +1,120 @@
+
+
+@keyframes flicker {
+    0% {
+        opacity:.1174
+    }
+
+    5% {
+        opacity:.29168
+    }
+
+    10% {
+        opacity:.18642
+    }
+
+    15% {
+        opacity:.8546
+    }
+
+    20% {
+        opacity:.53757
+    }
+
+    25% {
+        opacity:.43149
+    }
+
+    30% {
+        opacity:.93029
+    }
+
+    35% {
+        opacity:.84422
+    }
+
+    40% {
+        opacity:.9164
+    }
+
+    45% {
+        opacity:.26239
+    }
+
+    50% {
+        opacity:.22149
+    }
+
+    55% {
+        opacity:.24262
+    }
+
+    60% {
+        opacity:.22353
+    }
+
+    65% {
+        opacity:.74954
+    }
+
+    70% {
+        opacity:.73651
+    }
+
+    75% {
+        opacity:.07305
+    }
+
+    80% {
+        opacity:.1063
+    }
+
+    85% {
+        opacity:.59895
+    }
+
+    90% {
+        opacity:.34957
+    }
+
+    95% {
+        opacity:.31456
+    }
+
+    100% {
+        opacity:.146
+    }
+}
+
+/*
+@keyframes flicker {
+    0% { opacity: 1; }
+    5% { opacity: 0.5; }
+    10% { opacity: 1; }
+    15% { opacity: 0.7; }
+    20% { opacity: 1; }
+    25% { opacity: 0.4; }
+    30% { opacity: 1; }
+    35% { opacity: 0.8; }
+    40% { opacity: 1; }
+    45% { opacity: 0.6; }
+    50% { opacity: 1; }
+    55% { opacity: 0.3; }
+    60% { opacity: 1; }
+    65% { opacity: 0.9; }
+    70% { opacity: 1; }
+    75% { opacity: 0.2; }
+    80% { opacity: 1; }
+    85% { opacity: 0.4; }
+    90% { opacity: 1; }
+    95% { opacity: 0.7; }
+    100% { opacity: 1; }
+  }
+*/
+.animation {
+  animation: flicker .15s infinite;
+  transition: height 3s ease;
+  z-index: 2;
+  background: rgba(18, 16, 16, .08);
+}
+

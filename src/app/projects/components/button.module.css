@@ -1,0 +1,43 @@
+.buttonContainer {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    outline: 0;
+    width: 110px;
+    padding-top: 40px;
+}
+
+.iconContainer {
+    background: transparent url(folder.png) 0 0/36px 58px no-repeat;
+    bottom: 25px;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 29px;
+    width: 36px;
+    top: 6px;
+    right: 19px;
+}
+
+.buttonContainer span {
+    background-color: #fff;
+    color: #000;
+    display: block;
+    padding: 0 2px;
+    /**vertical-align: top;*/
+}
+
+.folder1 {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    margin: 10px;
+}

@@ -1,6 +1,7 @@
 import CSS from "csstype";
 import NavBar from "./navBar";
-
+import style from "./flicker.module.css";
+import Button from "./button";
 const Screen: React.FC = () => {
 
     const screenStyle: CSS.Properties = {
@@ -9,16 +10,18 @@ const Screen: React.FC = () => {
         height: "552px",
         borderRadius: "10px",
         position: "relative",
+        paddingTop: "30px",
 
         boxShadow: "0 0 100px rgba(0,0,0,.7)",
-        background: "#fff url(images/bg.png) 0 0 repeat;",
-        animation: "flicker .15s infinite",
+        background: "#fff url(images/bg.png) 0 0 repeat",
         content: " ",
+        //border: "1px solid #000",
     }
 
     return (
         <div style={screenStyle}>
             <NavBar></NavBar>
+            <Button></Button>
         </div>
     );
 }

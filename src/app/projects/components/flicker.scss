@@ -1,8 +1,0 @@
-@keyframes flicker{
-    $steps:20;
-    @for $i from 0 through $steps{
-      #{percentage($i*(1/$steps))}{
-        opacity:random();
-      }
-    }
-  }
