@@ -1,8 +1,5 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    display: block;
     height: 100vh;
     background: #FFF;
 }

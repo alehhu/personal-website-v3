@@ -1,14 +1,12 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    display: block;
     height: 100vh;
     background: #FFF;
 }
 
 .mainPart {
-    overflow: auto;
+    position: relative;
+    overflow: scroll;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +34,6 @@
     display: flex;
     flex-direction:row;
     align-items:center;
-    justify-content: center;
     min-height: 500px;
     white-space: nowrap;
     padding: 10px;

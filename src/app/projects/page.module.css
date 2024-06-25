@@ -1,8 +1,5 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    display: block;
     height: 100vh;
     background: #FFF;
 }
@@ -30,11 +27,4 @@
 	100% {
 		background-position: 0% 50%;
 	}
-}
-
-.screenContainer {
-    background-color: #E5E5E5;
-    width: 700px;
-    height: 552px;
-    border-radius: 10px;
 }
