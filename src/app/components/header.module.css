@@ -1,0 +1,22 @@
+.headerContainer {
+    display: flex;
+    height: 52px;
+    padding: 15px 374px 16px 374px;
+    justify-content: center;
+    align-items: center;
+    background: #FFF;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--Spacing-M, 48px);
+}
+.pageTitle {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+}

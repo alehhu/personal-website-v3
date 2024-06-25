@@ -1,0 +1,8 @@
+.footerContainer {
+    display: flex;
+    height: 52px;
+    padding: 9px 0px 3px 408px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: aquamarine;
+}
