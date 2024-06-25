@@ -10,7 +10,9 @@ const CourseReviewPage: React.FC = () => {
   
   return (
     <main className={styles.main}>
-      <Header></Header>
+      <div>
+        <Header></Header>
+      </div>
       <div className={styles.mainPart}>
         <div className={styles.reviewsContainer}>
           {CourseReviewsCollection.map((courseReviewData, index) => (
