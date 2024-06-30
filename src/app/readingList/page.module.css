@@ -49,12 +49,30 @@
     top: 100px;
     border-radius: 10px;
     position: relative;
-    padding-top: 30px;
+    padding: 25px;
+    padding-top: 35px;
 
     box-shadow: 0 0 100px rgba(0,0,0,.7);
     content: " ";
     border: 1px solid #000;
 
+}
+.readingListBoxBody {
+    margin-top: 15px;
+}
+.singleBookContainer {
+    margin-bottom: 10px;
+}
+.singleBookContainer span {
+    font-weight: 250;
+}
+.singleBookContainer h2 {
+    font-weight: 600;
+    font-size:large;
+}
+.singleBookContainer p {
+    font-weight: 300;
+    font-size:medium;
 }
 
 @media (min-width:768px) {

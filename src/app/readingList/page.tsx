@@ -15,12 +15,14 @@ const ReadingListPage: React.FC = () => {
           </video>
           <div className={styles.readingListBox}>
           <h1>Reading List</h1>
-          {readingListCollection.map((book, index) => (
-                    <div key={index} >
-                      <h2>{book.getTitle()}</h2>
-                      <p>{book.getComment()}</p>
-                    </div>          
-              ))}  
+          <div className={styles.readingListBoxBody}>
+            {readingListCollection.map((book, index) => (
+                      <div key={index} className={styles.singleBookContainer}>
+                        <h2>{book.getTitle()}<span> by {book.getAuthor()}</span></h2>
+                        <p>{book.getComment()}</p>
+                      </div>          
+                ))} 
+          </div>
           </div>
         </div>
         <Footer></Footer>
