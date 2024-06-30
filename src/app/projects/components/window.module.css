@@ -1,0 +1,19 @@
+.folderWindow {
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: .125rem;
+    left: 20px;
+    overflow: hidden;
+    opacity: 1!important;
+    position: absolute;
+    resize: both;
+    top: 50px;
+    z-index: 30;
+    height: 250px;
+    width: 320px;
+}
+
+.folderWindow {
+    height: 250px;
+    width: 420px;
+}

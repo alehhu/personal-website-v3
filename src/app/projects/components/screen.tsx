@@ -2,6 +2,8 @@ import CSS from "csstype";
 import NavBar from "./navBar";
 import style from "./flicker.module.css";
 import Button from "./button";
+import React from "react";
+
 const Screen: React.FC = () => {
 
     const screenStyle: CSS.Properties = {
@@ -19,10 +21,12 @@ const Screen: React.FC = () => {
     }
 
     return (
-        <div style={screenStyle}>
+        <div id="screen" style={screenStyle}>
             <NavBar></NavBar>
-            <Button></Button>
+            <Button ></Button>
+ 
         </div>
     );
 }
 export default Screen;
+//           {windowIsVisible && <RectangularComponent onClose={handleClose} />}
