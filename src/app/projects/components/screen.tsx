@@ -3,6 +3,7 @@ import NavBar from "./navBar";
 import style from "./flicker.module.css";
 import Button from "./button";
 import React from "react";
+import { ToggleWindowProvider } from './toggleWindowContext';
 
 const Screen: React.FC = () => {
 
@@ -23,8 +24,9 @@ const Screen: React.FC = () => {
     return (
         <div id="screen" style={screenStyle}>
             <NavBar></NavBar>
-            <Button ></Button>
- 
+            <ToggleWindowProvider>
+                <Button ></Button>
+            </ToggleWindowProvider>
         </div>
     );
 }

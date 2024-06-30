@@ -3,6 +3,7 @@ import CSS from "csstype";
 import React, { useEffect, useState } from 'react';
 import styles from "./button.module.css";
 import Window from "./window";
+import { useToggle } from "./toggleWindowContext";
 
 /*interface ScreenButtonProps {
     onClick: () => void;
@@ -10,12 +11,7 @@ import Window from "./window";
   
 const ScreenButton: React.FC = ({ }) => {
 
-    const [windowIsVisible, setWindowVisible] = React.useState(false);
-
-    const handleButtonClick = () => {
-        setWindowVisible(!windowIsVisible);
-        console.log("Button clicked, window visibility: ", !windowIsVisible);
-      };
+    const { windowIsVisible, toggleWindowVisibility } = useToggle();
 
     const [position, setPosition] = useState({ left: 0, top: 0 });
 
@@ -35,7 +31,7 @@ const ScreenButton: React.FC = ({ }) => {
 
     return (
         <div>
-            <button className={`${styles.buttonContainer} ${styles.folder1}`} onClick={handleButtonClick}>
+            <button className={`${styles.buttonContainer} ${styles.folder1}`} onClick={toggleWindowVisibility}>
             <div className={`${styles.iconContainer}`}></div>   
             <span>Project01</span> 
             </button>
