@@ -8,7 +8,7 @@
     position: absolute;
     resize: both;
     top: 50px;
-    z-index: 30;
+    z-index: 3;
     height: 250px;
     width: 320px;
 }

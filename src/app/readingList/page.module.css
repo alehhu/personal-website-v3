@@ -8,24 +8,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     min-height: 86%;
     min-width: 100%;
-    background: linear-gradient(-45deg, #6452ee, #b73ce7, #1e91bb, #32b395);
+    background: #FFF;
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     backdrop-filter: blur(8px);
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }
 
 .reviewsContainer{
@@ -37,4 +26,40 @@
     white-space: nowrap;
     padding: 10px;
     gap:10px;
+}
+
+.video {
+    display: block;
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 120%;
+    width: auto;
+
+    object-fit: contain;
+    content: normal;
+    z-index: 0;
+}
+
+.readingListBox {
+    background-color: #E5E5E5;
+    width: 700px;
+    height: 552px;
+    top: 100px;
+    border-radius: 10px;
+    position: relative;
+    padding-top: 30px;
+
+    box-shadow: 0 0 100px rgba(0,0,0,.7);
+    content: " ";
+    border: 1px solid #000;
+
+}
+
+@media (min-width:768px) {
+    .video {
+        height: 150%;
+        width: 150%;
+    }
 }
