@@ -1,0 +1,96 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #FFF;
+}
+
+.mainPart {
+    flex: 1 1 auto;
+    position: relative;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 100%;
+    padding: 10px;
+    background: linear-gradient(-45deg, #6452ee, #b73ce7, #1e91bb, #32b395);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    backdrop-filter: blur(8px);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+.mainPart {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.mainPart h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.mainPart p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: black;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0073b1; /* LinkedIn Blue */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #005582; /* Darker LinkedIn Blue */
+}
+
+.button:nth-child(2) {
+    background-color: #dd4b39; /* Gmail Red */
+}
+
+.button:nth-child(2):hover {
+    background-color: #c23321; /* Darker Gmail Red */
+}
+
+.button:nth-child(3) {
+    background-color: #333; /* GitHub Black */
+}
+
+.button:nth-child(3):hover {
+    background-color: #24292e; /* Darker GitHub Black */
+}

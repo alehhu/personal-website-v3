@@ -1,12 +1,12 @@
 .main {
-    display: block;
-    width: 1440px;
-    height: 900px;
-
     background: #FFF;
+    display: flex;
+    flex-direction: column;
 }
 
 .mainPart {
+    flex: 1 1 auto;
+    position: relative;
     display: flex;
     height: 796px;
     padding: 123px 176px 178px 303px;

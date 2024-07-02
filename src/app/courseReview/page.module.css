@@ -2,9 +2,12 @@
     display: block;
     height: 100vh;
     background: #FFF;
+    display: flex;
+    flex-direction: column;
 }
 
 .mainPart {
+    flex: 1 1 auto;
     position: relative;
     overflow: scroll;
     display: flex;

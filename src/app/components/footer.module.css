@@ -1,8 +1,31 @@
 .footerContainer {
     display: flex;
     height: 52px;
-    padding: 9px 0px 3px 408px;
-    justify-content: flex-end;
     align-items: center;
-    position: fixed;
+    position: relative;
+    background-color: yellow;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white; /* Dark background color */
+    color: black; /* Text color */
+
+    z-index: 15;
+    flex: 0 0 auto;
+}
+  
+.footer div {
+margin: 0 10px; /* Space between the icons */
+}
+
+.icon {
+color: black; /* Icon color */
+font-size: 20px; /* Icon size */
+text-decoration: none; /* Remove underline */
+transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.icon:hover {
+color: #ff6347; /* Change color on hover */
 }

@@ -25,7 +25,6 @@ const ReadingListPage: React.FC = () => {
           </div>
           </div>
         </div>
-        <Footer></Footer>
     </main>
     );
 }

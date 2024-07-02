@@ -12,6 +12,7 @@ const ProjectsPage: React.FC = () => {
       <div className={styles.mainPart}>
         <Screen></Screen>
       </div>
+      <Footer></Footer>
     </main>
     );
 }
