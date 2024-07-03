@@ -1,8 +1,10 @@
+
 import { inter, roboto_mono } from "@/app/fonts";
 import Link from 'next/link';
 import React from 'react';
 import { CourseReview, NumericalValuation } from '../components/courseReview';
 import CSS from "csstype";
+import styles from "./reviewBox.module.css";
 
 interface CourseReviewProps {
     courseReview: CourseReview;
@@ -11,7 +13,8 @@ interface CourseReviewProps {
 const ReviewBox: React.FC<CourseReviewProps> = ({ courseReview }) => {
 
     const numericalValuation = courseReview.getNumericalValuation();
-    const boxStyle: CSS.Properties = {
+
+    /*const boxStyle: CSS.Properties = {
         display: "flex",
         flexDirection: "column",
         whiteSpace: "pre-line",
@@ -22,11 +25,12 @@ const ReviewBox: React.FC<CourseReviewProps> = ({ courseReview }) => {
         borderRadius: "6px",
         padding: "10px",
 
-        fontWeight: "600"
-    }
+        fontWeight: "600",
+        fontSize: "16px",
+    }*/
 
     return (
-        <div style={boxStyle} className={roboto_mono.className} >
+        <div className={`${roboto_mono.className} ${styles.boxStyle}`} >
             {courseReview.getMetadata()}
             <br></br>
             {courseReview.getName()}  

@@ -1,0 +1,31 @@
+.boxStyle {
+    display: flex;
+    flex-direction: column;
+    white-space: pre-line;
+
+    min-width: 300px;
+    min-height: 500px;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 10px;
+
+    font-weight: 600;
+    font-size: 16px;
+}
+
+@media (max-width: 833px) {
+    .boxStyle {
+        display: flex;
+        flex-direction: column;
+        white-space: pre-line;
+    
+        min-width: 300px;
+        min-height: 500px;
+        border: 2px solid black;
+        border-radius: 6px;
+        padding: 10px;
+    
+        font-weight: 600;
+        font-size: 20px;
+    }
+}
