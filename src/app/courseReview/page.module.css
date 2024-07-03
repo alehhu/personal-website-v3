@@ -42,3 +42,9 @@
     white-space: nowrap;
     gap:10px;
 }
+
+@media (max-width: 833px) {
+    .reviewsContainer {
+        min-height: 520px;
+    }
+}
