@@ -4,8 +4,12 @@ import style from "./flicker.module.css";
 import Button from "./button";
 import React from "react";
 import { ToggleWindowProvider } from './toggleWindowContext';
+import { useMediaQuery } from 'react-responsive';
 
 const Screen: React.FC = () => {
+
+    const isMobile = useMediaQuery({ maxWidth: 833 });
+    //let externalDivForMobileResizing: CSS.Properties | undefined = undefined;
 
     const screenStyle: CSS.Properties = {
         //backgroundColor: "#E5E5E5",
@@ -47,17 +51,32 @@ const Screen: React.FC = () => {
         opacity: "0",
         zIndex: "10",
         pointerEvents: "none",          
-}
+    }
+
+    const screenStyleMobile: CSS.Properties = {
+        //width: "700px",
+        //height: "552px",
+        borderRadius: "10px",
+        position: "relative",
+        paddingTop: "30px",
+        height: "552px",
+        width: "100%",
+
+        boxShadow: "0 0 100px rgba(0,0,0,.7)",
+        background: "#fff url(images/bg.png) 0 0 repeat",
+        content: " ",
+        border: "1px solid #000",      
+    }
 
     return (
-        <div id="screen" style={screenStyle}>
-            <div style={screenFirstLayerStyle}></div>
-            <NavBar></NavBar>
-            <ToggleWindowProvider>
-                <Button ></Button>
-            </ToggleWindowProvider>
-            <div style={screenSecondLayerStyle}></div>
-        </div>
+            <div id="screen" style={isMobile ? screenStyleMobile : screenStyle}>
+                <div style={screenFirstLayerStyle}></div>
+                <NavBar></NavBar>
+                <ToggleWindowProvider>
+                    <Button ></Button>
+                </ToggleWindowProvider>
+                <div style={screenSecondLayerStyle}></div>
+            </div>
     );
 }
 export default Screen;
