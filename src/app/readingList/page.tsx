@@ -9,7 +9,7 @@ const ReadingListPage: React.FC = () => {
       <main className={styles.main}>
         <Header></Header>
         <div className={styles.mainPart}>
-          <video loop autoPlay playsInline muted className={styles.video}>
+          <video loop autoPlay playsInline muted className={styles.video} poster="/images/lazyMountainPhoto.jpg">
             <source src="/mountainView.mp4" type="video/mp4"></source>
             Your browser does not support the video tag.
           </video>
