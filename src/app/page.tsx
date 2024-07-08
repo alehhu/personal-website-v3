@@ -15,7 +15,7 @@ export default function Home() {
             Hi I'm Ale
           </div>
           <div className={`${styles.personalIntroduction} ${roboto_mono.className}`}>
-          i'm at first year of my BSc in computer science in milan at an unknown university, but I'm planning on transferring to Polytechnic of Milan for computer engineering for the next year to do more physics, hard classes and math.
+          i'm at first year of my BSc in computer science in milan at a quite unknown university, but I'm planning on transferring to Polytechnic of Milan for computer engineering for the next year to do more physics, hard classes and math.
           <br/><br/>
           I love feeling desperate, being in hard mode, and just lose all my hair :)
           <br/><br/>
