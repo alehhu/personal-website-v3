@@ -9,7 +9,7 @@ import { useToggle } from "./toggleWindowContext";
     onClick: () => void;
 }*/
   
-const ScreenButton: React.FC = ({ }) => {
+const DesktopButton: React.FC = ({ }) => {
 
     const { windowIsVisible, toggleWindowVisibility } = useToggle();
 
@@ -21,10 +21,10 @@ const ScreenButton: React.FC = ({ }) => {
           const containerWidth = container.clientWidth;
           const containerHeight = container.clientHeight;
         
-          const randomLeft = Math.random() * (containerWidth - 420); // Subtract component width
-          const randomTop = Math.random() * (containerHeight - 250); // Subtract component height
+          const randomLeft = Math.random() * (containerWidth - 345); // Subtract component width (320) + 25px for folders at right
+          const randomTop = Math.random() * (containerHeight - 280); // Subtract component height (250) + 30px for navBar spawn avoidance
     
-          setPosition({ left: randomLeft, top: randomTop });
+          setPosition({ left: randomLeft, top: randomTop + 30 });
           console.log("Position set to: ", { left: randomLeft, top: randomTop });
         }
       }, []);
@@ -40,4 +40,4 @@ const ScreenButton: React.FC = ({ }) => {
     );
 }
 
-export default ScreenButton;
+export default DesktopButton;

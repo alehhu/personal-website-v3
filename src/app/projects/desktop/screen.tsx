@@ -1,7 +1,7 @@
 import CSS from "csstype";
 import NavBar from "../navBar/navBar";
 import style from "./flicker.module.css";
-import Button from "./desktopButton";
+import DesktopButton from "./desktopButton";
 import { useEffect, useLayoutEffect, useState } from "react";
 import { ToggleWindowProvider } from './toggleWindowContext';
 import { useMediaQuery } from 'react-responsive';
@@ -45,7 +45,7 @@ const Screen: React.FC = () => {
                 <div style={screenFirstLayerStyle}></div>
                 <NavBar></NavBar>
                 <ToggleWindowProvider>
-                    <Button ></Button>
+                    <DesktopButton ></DesktopButton>
                 </ToggleWindowProvider>
                 <div style={screenSecondLayerStyle}></div>
             </div>

@@ -85,3 +85,9 @@
     height: 11px;
     width: 11px;
 }
+
+@media (max-width: 833px) {
+    .folderWindow {
+        width: 300px;
+    }
+}
