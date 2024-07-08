@@ -1,6 +1,5 @@
 // App.tsx
 import CSS from "csstype";
-import React, { useEffect, useState } from 'react';
 import styles from "./window.module.css";
 import { inter } from "@/app/fonts";
 import { useToggle } from "./toggleWindowContext";

@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import Screen from "./components/screen";
+import Screen from "./desktop/screen";
 
 const ProjectsPage: React.FC = () => {
     return (

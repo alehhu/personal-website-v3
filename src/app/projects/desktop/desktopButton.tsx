@@ -1,7 +1,7 @@
 'use client'
 import CSS from "csstype";
-import React, { useEffect, useState } from 'react';
-import styles from "./button.module.css";
+import { useEffect, useState } from 'react';
+import styles from "./desktopButton.module.css";
 import Window from "./window";
 import { useToggle } from "./toggleWindowContext";
 

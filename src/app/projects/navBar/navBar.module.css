@@ -1,0 +1,20 @@
+.navBarTextStyle {
+    font-family: Chicago,sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+.rightTopBar {
+    flex-direction: row;
+    display: flex;
+    gap: 24px;
+    -webkit-user-select: none;
+}
+
+.userName {
+
+}
+
+.timeBar {
+
+}

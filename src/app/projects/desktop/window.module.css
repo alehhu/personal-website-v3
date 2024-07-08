@@ -19,7 +19,7 @@
 }
 
 .banner {
-    background: #fff url(header-bg.png) 0 50% repeat-x;
+    background: #fff url(../navBar/header-bg.png) 0 50% repeat-x;
     content: "";
     display: block;
     height: 16px;
