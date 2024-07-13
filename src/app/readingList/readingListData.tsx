@@ -5,6 +5,11 @@ numerical valuation, 1)difficulty, 2)learned a lot, 3)enjoyed course, 4)timely g
 */
 export const readingListCollection: Book[] = new Array(
     new Book(
+        "Distributed Systems Principles",
+        "Tanenbaum",
+        "great and interesting explanation of modern software architecture"
+    ),
+    new Book(
         "Benjamin Franklin: An American Life",
         "Walter Isaacson",
         "..."

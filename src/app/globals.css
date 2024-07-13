@@ -18,5 +18,16 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-  
+  outline: none;
+  -webkit-tap-highlight-color: transparent; /* Remove gray highlight on tap */
+}
+
+button:active {
+  background-color: inherit; /* Keep background color unchanged */
+  color: inherit; /* Keep text color unchanged */
+}
+
+button {
+  outline: none; 
+  -webkit-tap-highlight-color: transparent; /* Remove gray highlight on tap */
 }

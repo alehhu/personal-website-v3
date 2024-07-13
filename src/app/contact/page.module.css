@@ -94,3 +94,32 @@
 .button:nth-child(3):hover {
     background-color: #24292e; /* Darker GitHub Black */
 }
+
+@media (max-width: 833px) {
+    .mainPart {
+        align-items: left;
+        text-align: left;
+        padding-left: 20px;
+    }
+    .mainPart h1 {
+        font-size: 4.0rem;
+        text-align: left;
+        width: 100%;
+    }
+    .mainPart p {
+        margin-top: -17px;
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        line-height: 1.6;
+        color: black;
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+        max-width: 200px;
+        gap: 15px;
+    }
+    .button {
+        border-radius: 15px;
+    }
+}
