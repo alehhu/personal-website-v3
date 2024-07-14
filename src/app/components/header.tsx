@@ -18,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <div className={`${styles.headerContainer} ${inter.className}`}>
+    <div className={`${styles.headerContainer} ${inter.className} ${isMobile && isMenuOpen ? styles.headerContainerWithMenuOpen : ''}`}>
         <button 
           className={`${styles.menuButton}`} 
           onClick={toggleMenu}
@@ -47,9 +47,9 @@ const Header = () => {
         <nav className={`${styles.navContainer} ${isMobile && isMenuOpen ? styles.menuOpen : ''}`}
           // Add transition for closing animation
           style={{ transition: isMenuOpen ? 'transform 0.35s ease-in' : 'transform 0.35s ease-out' }}
-        >    
+        > 
           <div className={styles.pageTitle}>
-            <Link className={`link ${pathname === '/' ? 'active' : ''}`} href="/">
+            <Link href="/" >
               Welcome To My Page
             </Link>
           </div>
