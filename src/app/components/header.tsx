@@ -19,11 +19,14 @@ const Header = () => {
 
   return (
     <div className={`${styles.headerContainer} ${inter.className}`}>
-        <button className={`${styles.menuButton}`} onClick={toggleMenu}>
+        <button 
+          className={`${styles.menuButton}`} 
+          onClick={toggleMenu}
+          >
           <svg width="18" height="18" viewBox="0 0 18 18">
           <polyline 
             fill="none" 
-            stroke="currentColor" 
+            stroke="black" 
             strokeWidth="1.2" 
             strokeLinecap="round" 
             strokeLinejoin="round" 
@@ -32,7 +35,7 @@ const Header = () => {
           />
           <polyline 
             fill="none" 
-            stroke="currentColor" 
+            stroke="black" 
             strokeWidth="1.2" 
             strokeLinecap="round" 
             strokeLinejoin="round" 

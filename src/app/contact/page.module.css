@@ -118,6 +118,7 @@
         flex-direction: column;
         max-width: 200px;
         gap: 15px;
+        display: none;
     }
     .button {
         border-radius: 15px;
