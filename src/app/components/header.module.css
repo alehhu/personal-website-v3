@@ -49,6 +49,9 @@
         justify-content: flex-end;
     }
 
+    /*position: fixed;
+        width: 100%;*/
+
     .navContainer {
       position: absolute;
       top: 52px;
@@ -57,7 +60,7 @@
       right: 0;
       background: #FFF;
       padding: 20px;
-      transform: translateY(-100%);
+      transform: translateY(-120%);
       z-index: 10; /* Ensure it's above other content */
 
       text-align: left;
