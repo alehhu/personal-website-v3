@@ -39,7 +39,7 @@ const ReviewBox: React.FC<CourseReviewProps> = ({ courseReview }) => {
             <br></br>
             <ul style={{listStyleType: "disc", paddingLeft: "40px", lineHeight: "42.5px"}}>
             {courseReview.getCoveredMaterials().map((topic, index) => (
-                    <li key={index}>{topic}</li>
+                    <li key={index} style={{}}>{topic}</li>
             ))}
             </ul>
             <br></br>
