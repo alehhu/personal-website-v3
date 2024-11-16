@@ -29,19 +29,19 @@ export const CourseReviewsCollection: CourseReview[] = new Array(
         new NumericalValuation(2, 3, 2, 3)
     ),
     new CourseReview(
-        "E3101Q102 (fall 2024)",
+        "E3101Q102 (fall 2023)",
         "fundamentals of computer science (basically discrete math)",
         new Array("discrete math", "basics of logics", "algebric structures"),
         new NumericalValuation(1, 2, 1, 2)
     ),
     new CourseReview(
-        "E3101Q105 (fall 2024)",
+        "E3101Q105 (fall 2023)",
         "introduction to high-level programming",
         new Array("java", "programming basics", "recursion"),
         new NumericalValuation(3, 5, 4, 2)
     ),
     new CourseReview(
-        "E3101Q102 (fall 2024)",
+        "E3101Q102 (fall 2023)",
         "calculus I",
         new Array("calculus", "derivatives", "integrals", "series&sequences"),
         new NumericalValuation(2, 3, 5, 3)

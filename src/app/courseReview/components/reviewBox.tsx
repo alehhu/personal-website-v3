@@ -2,7 +2,7 @@
 import { inter, roboto_mono } from "@/app/fonts";
 import Link from 'next/link';
 import React from 'react';
-import { CourseReview, NumericalValuation } from '../components/courseReview';
+import { CourseReview, NumericalValuation } from './CourseReview';
 import CSS from "csstype";
 import styles from "./reviewBox.module.css";
 

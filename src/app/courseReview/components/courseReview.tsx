@@ -1,5 +1,6 @@
 import { time } from "console";
 
+
 export class NumericalValuation {
     private difficulty: number;
     private learnedALot: number;
