@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import ReviewBox from "./components/reviewBox";
-import { CourseReview, NumericalValuation } from './components/courseReview';
+import { CompletedCourseReview, UncompletedCourseReview, NumericalValuation } from './components/courseReview';
 import { CourseReviewsCollection } from "./courseReviewsData";
 
 const CourseReviewPage: React.FC = () => {

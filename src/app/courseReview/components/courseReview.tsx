@@ -20,18 +20,13 @@ export class NumericalValuation {
     public getTimelyGrading() { return this.timelyGrading }
 }
 
-
 export class CourseReview {
     private metadata: string;
     private name: string;
-    private coveredMaterials: string[];
-    private numericalValuation: NumericalValuation;
 
-    constructor(metadata:string, name: string, coveredMaterials: string[], numericalValuation: NumericalValuation) {
+    constructor(metadata:string, name: string) {
         this.metadata = metadata;
         this.name = name;
-        this.coveredMaterials = coveredMaterials;
-        this.numericalValuation = numericalValuation;
       }
     
     public getMetadata(): string {
@@ -41,6 +36,17 @@ export class CourseReview {
     public getName(): string {
         return this.name;
     }
+}
+
+export class CompletedCourseReview extends CourseReview {
+    private coveredMaterials: string[];
+    private numericalValuation: NumericalValuation;
+
+    constructor(metadata:string, name: string, coveredMaterials: string[], numericalValuation: NumericalValuation) {
+        super(metadata, name)
+        this.coveredMaterials = coveredMaterials;
+        this.numericalValuation = numericalValuation;
+      }
 
     public getCoveredMaterials(): string[] {
         return this.coveredMaterials;
@@ -49,4 +55,11 @@ export class CourseReview {
     public getNumericalValuation(): NumericalValuation {
         return this.numericalValuation;
     }
+}
+
+export class UncompletedCourseReview extends CourseReview{
+
+    constructor(metadata:string, name: string) {
+        super(metadata, name);
+      }
 }
