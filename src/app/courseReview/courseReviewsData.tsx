@@ -7,16 +7,42 @@ numerical valuation, 1)difficulty, 2)learned a lot, 3)enjoyed course, 4)timely g
 type CourseReview = CompletedCourseReview | UncompletedCourseReview;
 export const CourseReviewsCollection: CourseReview[] = new Array(
     new UncompletedCourseReview(
+        "051124 (spring 2025)",
+        "physics"
+    ),
+    new UncompletedCourseReview(
+        "082748 (spring 2025)",
+        "basic circuit theory"
+    ),
+    new UncompletedCourseReview(
+        "054303 (spring 2025)",
+        "fundamentals of internet and communication networks"
+    ),
+    new UncompletedCourseReview(
+        "085905 (spring 2025)",
+        "fundamentals of automatic control"
+    ),
+    new UncompletedCourseReview(
+        "054304 (spring 2025)",
+        "theory of stochastic processes"
+    ),
+    new CompletedCourseReview(
         "052510 (fall 2024)",
-        "SOFTWARE ENGINEERING",
+        "software engineering",
+        new Array("JML", "testing", "functional java and concurrency", "design patterns"),
+        new NumericalValuation(2, 3, 4, 3)
     ),
-    new UncompletedCourseReview(
+    new CompletedCourseReview(
         "058081 (fall 2024)",
-        "THERMODYNAMICS AND HEAT TRANSFER",
+        "thermodynamics and heat transfer",
+        new Array("open systems", "applied energy systems", "heat transfer mechanisms", "thermal applications",),
+        new NumericalValuation(2, 3, 4, 2)
     ),
-    new UncompletedCourseReview(
+    new CompletedCourseReview(
         "052425 (fall 2024)",
-        "Multivariable Calculus",
+        "mathematical analysis 2",
+        new Array("multivariable calculus", "differential equations/systems","integral vector analysis", "fourier/power series"),
+        new NumericalValuation(3, 3, 3, 3)
     ),
     new CompletedCourseReview(
         "E3101Q104 (spring 2024)",
@@ -27,7 +53,7 @@ export const CourseReviewsCollection: CourseReview[] = new Array(
     new CompletedCourseReview(
         "E3101Q106 (spring 2024)",
         "object-oriented programming in java",
-        new Array("java", "data structures", "polymorphism", "I/O") ,
+        new Array("java", "data structures", "polymorphism", "I/O"),
         new NumericalValuation(3, 3, 4, 3)
     ),
     new CompletedCourseReview(
