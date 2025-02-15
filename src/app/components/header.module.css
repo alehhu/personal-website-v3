@@ -24,7 +24,13 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 21px */
+    transition: color 0.3s; /* Smooth transition for hover effect */
 }
+
+.pageTitle:hover {
+  color:darkgray; /* Change color on hover */
+}
+
 .menuButton {
     display: none;
 }
