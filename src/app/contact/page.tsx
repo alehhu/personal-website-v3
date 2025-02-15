@@ -4,6 +4,7 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import { Montserrat, Roboto } from "next/font/google";
+import { roboto_mono } from "../fonts";
 
 const montserrat = Montserrat({ subsets: ["latin"], weight: ["400", "700"] });
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
