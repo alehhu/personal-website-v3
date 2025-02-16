@@ -14,6 +14,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "next": "^14.2.5",
+    "nprogress": "^0.2.0",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.1",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.14.8",
+    "@types/nprogress": "^0.2.3",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/webpack-env": "^1.18.5",
